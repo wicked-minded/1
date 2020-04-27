@@ -1,0 +1,817 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Neucha&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+h1 {
+    font-family: 'Neucha', cursive;
+}
+.light {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+#dark {
+    color: #fff;
+    background-color: black;
+    background-image:
+       -moz-radial-gradient(circle, #fff 2px, rgba(248,125,240,.5) 4px, transparent 40px),
+       -moz-radial-gradient(circle, #fff 1px, rgba(247, 134, 109, 0.4) 3px, transparent 30px),
+       -moz-radial-gradient(ellipse, rgba(255,255,255,.9) 1px, rgba(251,255,186,.3) 2px, transparent 40px),
+       -moz-radial-gradient(ellipse, rgba(255,255,255,.4), rgba(253,255,219,.2) 1px, transparent 30px);
+
+    background-image:
+       -webkit-gradient(radial, 50% 50%, 2, 50% 50%, 40, from(#fff), color-stop(0.1, rgba(248,125,240,.5)), to(transparent)),
+       -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 30, from(#fff), color-stop(0.1, rgba(247, 134, 109, 0.4)), to(transparent)),
+       -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 40, from(rgba(255,255,255,.9)), color-stop(0.05, rgba(251,255,186,.3)), to(transparent)),
+       -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 30, from(rgba(255,255,255,.4)), color-stop(0.03, rgba(253,255,219,.2)), to(transparent));
+
+    background-size: 550px 550px, 350px 350px, 250px 270px, 220px 200px;
+    background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+
+    animation: movement 5s linear infinite;
+    -moz-animation: movement 5s linear infinite;
+    -webkit-animation: movement 5s linear infinite;
+}
+ @keyframes movement
+ {
+    from {background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;}
+    to {background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;}
+ }
+ @-moz-keyframes movement
+ {
+    from {background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;}
+    to {background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;}
+ }
+ @-webkit-keyframes movement
+ {
+    from {background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;}
+    to {background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;}
+ }
+
+@media (max-width: 575.98px) {
+    h1 {
+        text-shadow: #fff 2px 2px 2px;
+        padding: 15vw 5vw;
+
+        font-size: 10vh;
+        margin: 7vw;
+        height: 99vh;
+    }
+    .poster {
+        height: 90vw;
+        position: relative;
+        
+        width: 90vw;
+    }
+    .poster img {
+        position: absolute;
+        bottom: 0;
+        max-height: 90vw;
+        left: 15%;
+    }
+    .poster img:hover {
+        opacity: 0.7;
+    }
+    .film h6,
+    .film article,
+    .film blockquote {
+        width: 90vw;
+    }
+    .film h6 {
+        font-size: 8vw;
+        padding: 0;
+        margin: 0;
+    }
+    .film h6:hover {
+        color: darkred;
+    }
+    .film blockquote {
+        padding: 0;
+        margin: 3%;
+    }    
+    .film {
+        display: block;
+        padding: 3%;
+    }
+
+    .pict img {
+        width: 95vw;
+        padding: 3px;
+    }
+    .pict p {
+        text-align: center;
+        margin: 3vw;
+    }
+    
+    nav {
+        width: 90%;
+        display: inline-flex;
+        display: -webkit-inline-flex;
+
+        display: -moz-inline-box;
+        display: -ms-inline-flexbox;
+
+        justify-content: space-between;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+    }
+    .nav {
+        width: 1vw;
+        font-size: 1vw;   
+        color: transparent; 
+    }
+    a:first-child .nav::before{
+        margin-left: 3px;
+        
+        padding: 10px 9.5px;
+        content: "\277A";
+        color: maroon;
+        font-size: 30px;
+    }
+    a:nth-child(2) .nav::before{
+        
+        padding: 10px 17px;
+        content: '\0192';
+        color: maroon;
+        font-size: 30px;
+    }
+    a:nth-child(3) .nav::before{
+        
+        padding: 17px 8px;
+        content: url(imgs/m.png);
+        color: maroon;
+    }
+    a:nth-child(4) .nav::before{
+        
+        padding: 10px;
+        content: '\2740';
+        color: maroon;
+        font-size: 30px;
+    }
+    a:nth-child(5) .nav::before{
+        
+        padding: 10px;
+        content: '\2630';
+        color: maroon;
+        font-size: 30px;
+    }
+    a:last-child .nav::before{
+        
+        padding: 10px;
+        content: 'Zp';
+        color: maroon;
+        font-size: 30px;
+    }
+    .nav:hover {
+        transform: scale(1.2);
+    }
+    #quote {
+        font-size: 4vw;
+        margin: 5vw 20vw;
+        padding: 5vw;
+        border: 1px maroon double;
+    }
+    iframe:first-of-type {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        text-shadow: #fff 2px 2px 2px;
+        padding: 18vw 2vw;
+        font-size: 15vh;
+        margin: 7vw;
+        height: 99vh;
+
+    }
+    .film {
+        display: block;
+        padding: 2%;
+    }
+    .poster {
+        height: 40vw;
+        position: relative;
+        
+        width: 42vw;
+    }
+    .poster img {
+        position: absolute;
+        bottom: 0;
+        max-height: 40vw;
+        left: 15%;
+    }
+    .poster img:hover {
+        opacity: 0.7;
+    }
+    .film h6,
+    .film article,
+    .film blockquote {
+        width: 42vw;
+    }
+    .film h6 {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    .film h6:hover {
+        color: darkred;
+    }
+    .film blockquote {
+        padding: 0;
+        margin: 5px;
+    }
+    .film:last-child {
+        margin-top: -250px;
+    }
+
+    .pict {
+        display: flex;
+        display: flexbox;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: -webkit-flex;
+        
+        align-items: center;
+        -webkit-align-items: center;
+        -webkit-flex-wrap: wrap;
+
+        height: max-content;
+        margin: 10px;
+    }
+    .pict img {
+        width: 70vw;
+        height: auto;
+        padding: 3px;
+    }
+    .pict p {
+        text-align: center;
+        margin: 3vw;
+    }
+
+    .nav {
+        font-size: 2.5vw;   
+        margin: 0 2vw;
+        padding: 0 2vw;
+
+        border-right: 2px solid rgb(189, 189, 189);
+    }
+    nav a:last-child .nav {
+        border: none;
+    }
+    nav a:nth-child(4) .nav {
+        border: none;
+        margin: 30px -15px 0;
+    }
+    nav a:nth-child(5) .nav {
+        border-left:2px solid rgb(189, 189, 189);
+        border-right: 2px solid rgb(189, 189, 189);
+        padding-left: 30px;
+    }
+    .nav:hover {
+        color: orangered;
+    }
+    nav {
+        display: inline-flex;
+        display: -webkit-inline-flex;
+
+        display: -moz-inline-box;
+        display: -ms-inline-flexbox;
+
+        justify-content: center;
+        -webkit-justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+        
+    }
+
+    #quote {
+        font-size: 3vw;
+        margin: 5vw 20vw;
+        padding: 5vw;
+        border: 1px maroon double;
+    }
+    iframe:first-of-type {
+        width: 100%;
+    }  
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        text-shadow: #fff 2px 2px 2px;
+        padding: 15vw 5vw;
+        font-size: 15vh;
+        margin: 7vw;
+        height: 99vh;
+
+    }
+    .film {
+        display: block;
+        padding: 3%;
+    }
+    .poster {
+        height: 40vw;
+        position: relative;
+        
+        width: 42vw;
+    }
+    .poster img {
+        position: absolute;
+        bottom: 0;
+        max-height: 40vw;
+        left: 15%;
+    }
+    .poster img:hover {
+        opacity: 0.7;
+    }
+    .film h6,
+    .film article,
+    .film blockquote {
+        width: 42vw;
+    }
+    .film h6 {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    .film h6:hover {
+        color: darkred;
+    }
+    .film blockquote {
+        padding: 0;
+        margin: 3%;
+    }
+    .film:last-child {
+        margin-top: -200px;
+    }
+
+
+    .pict {
+        display: flex;
+        display: flexbox;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: -webkit-flex;
+        
+        align-items: center;
+        -webkit-align-items: center;
+        -webkit-flex-wrap: wrap;
+        height: max-content;
+        margin: 10px;
+       
+    }
+    .pict img {
+        height: 90vh;
+        padding: 3px;
+    }
+    .pict p {
+        text-align: center;
+        margin: 3vw;
+    }
+
+    
+    .nav {  
+        padding-right: 2vw;
+        margin-right: 2vw;
+
+        border-right: 2px solid rgb(189, 189, 189);
+    }
+    nav a:last-child .nav {
+        border: none;
+    }
+    .nav:hover {
+        color: orangered;
+    }
+    nav {
+    
+        margin: 0 auto;
+        width: 100%;
+        display: inline-flex;
+        display: -webkit-inline-flex;
+
+        display: -moz-inline-box;
+        display: -ms-inline-flexbox;
+
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+
+    #quote {
+        font-size: 2vw;
+        margin: 5vw 20vw;
+        padding: 5vw;
+        border: 1px maroon double;
+    }
+
+    iframe:first-of-type {
+        margin: 0 12vw 30px;
+        width: 600px;
+    }  
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1 {
+        text-shadow: #fff 2px 2px 2px;
+        padding: 1vw 5vw;
+        font-size: 20vh;
+        margin: 7vw;
+        height: 99vh;
+
+    }
+    .film {
+        display: block;
+        padding: 3%;
+    }
+    .poster {
+        height: 35vw;
+        position: relative;
+        
+        width: 25vw;
+    }
+    .poster img {
+        position: absolute;
+        bottom: 0;
+        max-height: 35vw;
+        margin: 0 auto;
+    }
+    .poster img:hover {
+        opacity: 0.7;
+    }
+    .film h6,
+    .film article,
+    .film blockquote {
+        width: 25vw;
+    }
+    .film h6 {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    .film h6:hover {
+        color: darkred;
+    }
+    .film blockquote {
+        padding: 0;
+        margin: 3%;
+    }
+    
+
+    .pict {
+        display: flex;
+        display: flexbox;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: -webkit-flex;
+        
+        align-items: center;
+        -webkit-align-items: center;
+        -webkit-flex-wrap: wrap;
+        height: max-content;
+        margin: 0 25vw;
+       
+    }
+    .pict img {
+        width: 20vw;
+        height: auto;
+        padding: 3px;
+    }
+    .pict p {
+        text-align: center;
+        margin: 3vw;
+    }
+    .pict img:hover {
+        cursor: pointer;
+        animation: sc 2s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes sc {
+        to {transform: scale(1.1);}
+    }
+    
+
+    .nav {
+        font-size: 1.5vw;   
+        padding-right: 2vw;
+        margin-right: 2vw;
+
+        border-right: 2px solid rgb(189, 189, 189);
+    }
+    nav a:last-child .nav {
+        border: none;
+    }
+    .nav:hover {
+        color: orangered;
+    }
+    nav {
+    
+        margin: 0 auto;
+        width: 100%;
+        display: inline-flex;
+        display: -webkit-inline-flex;
+
+        display: -moz-inline-box;
+        display: -ms-inline-flexbox;
+
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+
+    #quote {
+        font-size: 2vw;
+        margin: 5vw 20vw;
+        padding: 5vw;
+        border: 1px maroon double;
+    }
+
+    iframe:first-of-type {
+        margin: 0 23vw 30px;
+        width: 600px;
+    }    
+}
+
+
+@media (min-width: 1200px) {
+    h1 {
+        text-shadow: #fff 2px 2px 2px;
+        padding: 0 5vw;
+        font-size: 15vh;
+        margin: 7vw;
+        height: 99vh;
+
+    }
+    .film {
+        display: block;
+        padding: 25px;
+    }
+    .poster {
+        height: 25vw;
+        position: relative;
+        
+        width: 20vw;
+    }
+    .poster img {
+        position: absolute;
+        bottom: 0;
+        max-height: 25vw;
+        left: 5%;
+    }
+    .poster img:hover {
+        opacity: 0.7;
+    }
+    .film h6,
+    .film article,
+    .film blockquote {
+        width: 20vw;
+    }
+    .film h6 {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    .film h6:hover {
+        color: darkred;
+    }
+    .film blockquote {
+        padding: 0;
+        margin: 3%;
+    }
+
+    .pict {
+        padding: 0 25vw;
+
+        height: max-content;
+        margin: 10px;
+
+        display: flex;
+        display: flexbox;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: -webkit-flex;
+        
+        align-items: center;
+        -webkit-align-items: center;
+        -webkit-flex-wrap: wrap;
+    }
+    .pict img {
+        width: 20vw;
+        height: auto;
+        padding: 3px;
+    }
+    .pict p {
+        text-align: center;
+        margin: 3vw;
+    }
+    .pict img:hover {
+        cursor: pointer;
+        animation: sc 2s forwards;
+    }
+    @keyframes sc {
+        to {transform: scale(1.7);}
+    }
+    nav {
+        margin: 0 auto;
+        width: 100%;
+        display: inline-flex;
+        display: -webkit-inline-flex;
+
+        display: -moz-inline-box;
+        display: -ms-inline-flexbox;
+
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+    
+    .nav {
+        font-size: 19px;
+        padding-right: 2vw;
+        margin-right: 2vw;
+
+        border-right: 2px solid rgb(189, 189, 189);
+    }
+    nav a:last-child .nav {
+        border: none;
+    }
+    .nav:hover {
+        color: orangered;
+    }
+    #quote {
+        font-size: 2vw;
+        margin: 5vw 20vw;
+        padding: 5vw;
+        border: 1px maroon double;
+    }
+
+    iframe:first-of-type {
+        margin: 0 30vw 30px;
+        width: 600px;
+    }    
+}
+
+
+.main_head {
+    height: max-content;
+}
+
+nav a,
+footer a {
+    text-decoration: none !important;
+    color: darkred;
+}
+.nav {
+    margin-top: 20px;
+}
+
+table {
+    
+    width: 100%;
+    text-align: center;
+}
+td, th {
+    
+    height: max-content;
+}
+th:first-child,
+td:first-child {
+    width: 40vw;
+}
+thead {
+    white-space: nowrap;
+    background-color: maroon;
+    color: mintcream;
+}
+table tr:hover {
+    background-color: rgba(117, 10, 10, 0.4);
+    font-weight: 600;
+}
+
+section h3 {
+    padding: 0 2vw;
+}
+h2 {
+    text-align: center;
+}
+#aboutme {
+    margin-left: 1vw;
+}
+footer {
+    margin-left: 1vw;
+}
+section#films {
+    margin-top: 10vw;
+    width: 100%;
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    -webkit-flex-wrap: wrap; 
+    flex-wrap: wrap; 
+    align-content: center;
+    height: max-content;
+}
+#pictures {
+    width: 100%;
+    display: flexbox;
+    display: -ms-flexbox;
+    
+
+}
+.pict:nth-child(2n-1) {
+    flex-flow: row-reverse; 
+}
+
+#city {
+    margin: 5vw 0 10vw;
+}
+.main_head > button {
+    position: fixed;
+    top: 70px;
+    left: 2px;
+    opacity: 0.4;
+}
+#b2 {
+    position: fixed;
+    top: 70px;
+    right: 2px;
+    opacity: 0.4;
+}
+#b2:hover,
+button:hover {
+    opacity: 1;
+}
+
+blockquote::before{
+    content: '\00ab';
+}
+blockquote::after{
+    content: '\00bb';
+}
+section header {
+    margin: 30px;
+}
+
+
+iframe:nth-of-type(2) {
+    border: 0;
+    width: 100%;
+    height: 65vh;
+}
+
+
+.rating {
+    margin: -4px 0 4px;
+}
+.rating input:hover{
+    cursor: pointer;
+}
+.rating input,
+.rating label {
+    position: relative;
+    margin: 0 -2px;
+
+    width: 10px;
+    height: 18px;
+    vertical-align: bottom;
+
+    -webkit-appearance: none;
+    outline: none;
+}
+.rating label {
+    display: none;
+    font-size: 0;
+    margin-left: -8px;
+}
+.rating input:first-of-type {
+    position: absolute;
+    visibility: hidden;
+}
+.rating input:first-of-type + input:checked + label {
+    display: inline-block;
+    z-index: 1;
+}
+.rating input:before {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+}
+.rating input:nth-of-type(2n):before {
+    background: url(imgs/star.png) 0 0;
+}
+.rating input:nth-of-type(2n-1):before {
+    background: url(imgs/star.png) -10px 0;
+}
+.rating:not(:hover) input:checked ~ input:nth-of-type(2n):before,
+.rating input:hover ~ input:nth-of-type(2n):before {
+    background: url(imgs/star.png) -19px 0;
+}
+.rating:not(:hover) input:checked ~ input:nth-of-type(2n-1):before,
+.rating input:hover ~ input:nth-of-type(2n-1):before {
+    background: url(imgs/star.png) 100% 0;
+}

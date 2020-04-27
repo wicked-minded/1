@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anastasia's Ivchenko</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <meta property="og:title" content="Cтраница Анастасии Ивченко" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Anastasia's Ivchenko" />
+    <meta property="og:description" content="Marks, Films, Pictures and some interesting information about myself" />
+    <meta property="og:image" content="imgs/happy.jpg" />
+    <meta property="og:image:height" content="600" />
+
+</head>
+<body id="dark">
+
+    
+    <header class="main_head" id="top">
+        <nav>
+            <a href="#marks" data-target="anchor"><div class="nav">Мои оценки</div></a>
+            <a href="#films" data-target="anchor"><div class="nav">Любимые фильмы</div></a>
+            <a href="#aboutme" data-target="anchor"><div class="nav">Обо мне</div></a>
+            <a href="#pictures" data-target="anchor"><div class="nav">Картинки</div></a>
+            <a href="#quote" data-target="anchor"><div class="nav">Любимая цитата</div></a>
+            <a href="#city" data-target="anchor"><div class="nav">Родной город</div></a>
+        </nav>
+        <button type="button" class="btn btn-light" id="b1">&#10052;</button>
+    
+        <a href="#top" type="button" class="btn btn-light" id="b2" >&#11014;</a>
+        
+        <h1>Моя <br>личная <br>страница</h1>
+    </header>
+
+
+
+    <table id="marks">
+        <thead>
+            <tr>
+                <th>Дисциплина</th>
+                <th>Преподаватель</th>
+                <th>Нац</th>
+                <th>Бал</th>
+                <th>ECTS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td title="Архітектура обчислювальних систем">Архітектура обчислювальних систем</td>
+                <td>Ломакін О. М. [ДММ]</td>
+                <td>5</td>
+                <td>90</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td title="Дискретна математика. Ч.2">Дискретна математика. Ч.2</td>
+                <td>Татарінова О. А. [КМПС]</td>
+                <td>5</td>
+                <td>93</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td title="Диференційні рівняння">Диференційні рівняння</td>
+                <td>Міхлін Ю. В. [ПМ]</td>
+                <td>4</td>
+                <td>75</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>Іноземна мова</td>
+                <td>Дурнєва М. В. [ІМ]</td>
+                <td>5</td>
+                <td>95</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td title="Нарисна геометрія та комп'ютерна графіка">Нарисна геометрія та комп'ютерна графіка</td>
+                <td>Федченко Г. В. [ГМКГ]</td>
+                <td>4</td>
+                <td>75</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td title="Об'єктно-орієнтоване програмування">Об'єктно-орієнтоване програмування</td>
+                <td>Водка О. О. [ДММ]</td>
+                <td>4</td>
+                <td>89</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>Фізичне виховання</td>
+                <td>Ширяєва С. В. [ФВ]</td>
+                <td>5</td>
+                <td>92</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Правознавство</td>
+                <td>Сємко М. О. [П]</td>
+                <td>5</td>
+                <td>100</td>
+                <td>A</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <section id="films">
+        <header>
+            Выбрать всего лишь 5 лучших фильмов - для меня оказалось невыполнимо сложным заданием. Поэтому у меня их 11. Каждый требует к себе особого внимания, к вашему внимаю, здесь собраны шедевры мировой киноиндустрии по версии Ивченко Анастасии &#128516;. Звездочки кликабельны. 
+        </header>
+        <div class="film">
+            <div class="poster"><a href="https://kinokrad.co/333266-1-10-mstitelli-finall.html" target="_blank"><img src="imgs/avengers_endgame.jpg" alt="Avengers: Endgame"></a>
+            </div> 
+            
+            <h6>Avengers: Endgame</h6>
+           
+            <div class="rating">
+                <input name="rating-1" type="radio" value="0" id="zero1">
+                <input name="rating-1" type="radio" value="0.5"><label for="zero1"></label>
+                <input name="rating-1" type="radio" value="1">
+                <input name="rating-1" type="radio" value="1.5">
+                <input name="rating-1" type="radio" value="2">
+                <input name="rating-1" type="radio" value="2.5">
+                <input name="rating-1" type="radio" value="3">
+                <input name="rating-1" type="radio" value="3.5">
+                <input name="rating-1" type="radio" value="4">
+                <input name="rating-1" type="radio" value="4.5">
+                <input name="rating-1" type="radio" value="5" checked>
+            </div>
+
+            <article>Финал.</article>
+            <blockquote cite="https://www.film.ru/articles/recenziya-na-film-mstiteli-final">Минное поле из теорий и сюжетов, которые в представлении зрителя легко могут оказаться интереснее того, что они в итоге увидят: у фанатской фантазии был целый год, чтобы успеть нехило разыграться и построить самые безумные ожидания.</blockquote>
+            
+        </div>
+        <div class="film">
+            <div class="poster"><a href="https://gidonline.io/film/neprikasaemye-1-1-2011/" target="_blank"><img src="imgs/1+1.jpg" alt="Intouchables"></a>
+            </div> 
+            
+            <h6>1+1</h6>
+          
+            <div class="rating">
+                <input name="rating-2" type="radio" value="0" id="zero2">
+                <input name="rating-2" type="radio" value="0.5"><label for="zero2"></label>
+                <input name="rating-2" type="radio" value="1">
+                <input name="rating-2" type="radio" value="1.5">
+                <input name="rating-2" type="radio" value="2">
+                <input name="rating-2" type="radio" value="2.5">
+                <input name="rating-2" type="radio" value="3">
+                <input name="rating-2" type="radio" value="3.5">
+                <input name="rating-2" type="radio" value="4">
+                <input name="rating-2" type="radio" value="4.5" checked>
+                <input name="rating-2" type="radio" value="5">
+            </div>
+
+            <article>(фр. Intouchables — «Неприкасаемые») — французская трагикомедия 2011 года, основанная на реальных событиях</article>
+            <blockquote cite="https://www.ivi.ru/watch/109726/reviews">Фильм, о котором я узнал случайно, но который после первого просмотра запал в душу. Это поистине гениальное творение и шедевр в жанре комедии.</blockquote>
+        
+        </div>
+        <div class="film">
+            <div class="poster"><a href="https://go.filmshd.vip/1250-leon.html" target="_blank"><img src="imgs/leon.jpeg" alt="Leon"></a>
+            </div> 
+            
+            <h6>Leon</h6>
+           
+            <div class="rating">
+                <input name="rating-3" type="radio" value="0" id="zero3">
+                <input name="rating-3" type="radio" value="0.5"><label for="zero3"></label>
+                <input name="rating-3" type="radio" value="1">
+                <input name="rating-3" type="radio" value="1.5">
+                <input name="rating-3" type="radio" value="2">
+                <input name="rating-3" type="radio" value="2.5">
+                <input name="rating-3" type="radio" value="3">
+                <input name="rating-3" type="radio" value="3.5">
+                <input name="rating-3" type="radio" value="4">
+                <input name="rating-3" type="radio" value="4.5">
+                <input name="rating-3" type="radio" value="5" checked>
+            </div>
+
+            <article>Классика жанра. В этом нет никаких сомнений.</article>
+            <blockquote cite="https://www.film.ru/articles/moy-papa-killer">Любовь можно найти во многих местах, но только не в сердце безжалостного наемного убийцы. Если, конечно, вы не смотрите один из лучших психологических триллеров всех времен</blockquote>
+        
+        </div>
+        <div class="film">
+            <div class="poster"><a href="https://kinokrad.co/324194-tri-bilborda-na-granice-jebbinga-missuri-2018.html" target="_blank"><img src="imgs/3.jpg" alt="3"></a>
+            </div>
+            
+            <h6 title="Три билборда на границе Эббинга, Миссури">Три билборда на границе Эббинга, Миссури</h6>
+           
+            <div class="rating">
+                <input name="rating-4" type="radio" value="0" id="zero4">
+                <input name="rating-4" type="radio" value="0.5"><label for="zero4"></label>
+                <input name="rating-4" type="radio" value="1">
+                <input name="rating-4" type="radio" value="1.5">
+                <input name="rating-4" type="radio" value="2">
+                <input name="rating-4" type="radio" value="2.5">
+                <input name="rating-4" type="radio" value="3">
+                <input name="rating-4" type="radio" value="3.5">
+                <input name="rating-4" type="radio" value="4" checked>
+                <input name="rating-4" type="radio" value="4.5">
+                <input name="rating-4" type="radio" value="5">
+            </div>
+
+            <article>Довольно непредсказуемая концовка</article>
+            <blockquote cite="http://thr.ru/cinema/recenzia-tri-bilborda-na-granice-ebbinga-missuri-martina-makdony/">Три билборда на практически заброшенной дороге стали камнем преткновения для целого небольшого городка в Миссури.</blockquote>
+        
+        </div>
+        <div class="film">
+            <div class="poster"><a href="http://smotri-filmi.cc/6861-mstiteli-3-voyna-beskonechnosti_hd.html" target="_blank"><img src="imgs/Avengers_Infinity_War.jpg" alt="Avengers: Infinity War"></a>
+            </div> 
+            
+            <h6>Avengers: Infinity War</h6>
+          
+            <div class="rating">
+                <input name="rating-5" type="radio" value="0" id="zero5">
+                <input name="rating-5" type="radio" value="0.5"><label for="zero5"></label>
+                <input name="rating-5" type="radio" value="1">
+                <input name="rating-5" type="radio" value="1.5">
+                <input name="rating-5" type="radio" value="2">
+                <input name="rating-5" type="radio" value="2.5">
+                <input name="rating-5" type="radio" value="3">
+                <input name="rating-5" type="radio" value="3.5">
+                <input name="rating-5" type="radio" value="4">
+                <input name="rating-5" type="radio" value="4.5">
+                <input name="rating-5" type="radio" value="5" checked>
+            </div>
+
+            <article>Война бесконечности</article>
+            <blockquote cite="https://www.film.ru/articles/i-na-kamnyah-rastut-geroi">Грандиозная и захватывающая кульминация приключений комиксных супергероев из киновселенной Marvel.</blockquote>
+        
+        </div>
+        <div class="film">
+            <div class="poster"><a href="https://kinokrad.co/323759-astral-4-posledniy-klyuch.html" target="_blank"><img src="imgs/Insidious.jpg" alt="Астрал"></a>
+            </div> 
+            
+            <h6>Астрал 4: Последний ключ</h6>
+          
+            <div class="rating">
+                <input name="rating-6" type="radio" value="0" id="zero6">
+                <input name="rating-6" type="radio" value="0.5"><label for="zero6"></label>
+                <input name="rating-6" type="radio" value="1">
+                <input name="rating-6" type="radio" value="1.5">
+                <input name="rating-6" type="radio" value="2">
+                <input name="rating-6" type="radio" value="2.5">
+                <input name="rating-6" type="radio" value="3">
+                <input name="rating-6" type="radio" value="3.5" checked>
+                <input name="rating-6" type="radio" value="4">
+                <input name="rating-6" type="radio" value="4.5">
+                <input name="rating-6" type="radio" value="5">
+            </div>
+
+            <article>Да, еще я люблю ужастики. Серия фильмов состоит из 4 фильмов в жанрах ужасы, мистика и триллер.</article>
+            <blockquote cite="https://www.megacritic.ru/film/astral-4-poslednij-klyuch">Фильм Астрал 4: Последний ключ продолжает мистические приключения женщины-экстрасенса Элис Райнер, которая всеми силами противостоит злу и демонам тёмной стороны Астрала.</blockquote>
+      
+        </div>
+        <div class="film">
+            <div class="poster"><a href="https://kinokrad.co/267130-priklyucheniyya-paddingtona-2015-hdtv.html" target="_blank"><img src="imgs/paddington.jpg" alt="Приключения Паддингтона"></a>
+            </div> 
+            
+            <h6>Приключения Паддингтона</h6>
+           
+            <div class="rating">
+                <input name="rating-7" type="radio" value="0" id="zero7">
+                <input name="rating-7" type="radio" value="0.5"><label for="zero7"></label>
+                <input name="rating-7" type="radio" value="1">
+                <input name="rating-7" type="radio" value="1.5">
+                <input name="rating-7" type="radio" value="2">
+                <input name="rating-7" type="radio" value="2.5">
+                <input name="rating-7" type="radio" value="3">
+                <input name="rating-7" type="radio" value="3.5">
+                <input name="rating-7" type="radio" value="4">
+                <input name="rating-7" type="radio" value="4.5">
+                <input name="rating-7" type="radio" value="5" checked>
+            </div>
+
+            <article>Познакомьтесь, это медведь по имени Паддингтон из дремучего Перу. Он приехал в Лондон, чтобы обрести семью и стать настоящим английским джентльменом. Продолжением является второй семейный комедийный фильм Приключения Паддингтона 2.</article>
+            <blockquote cite="https://www.filmpro.ru/movies/9673">Паддингтон - это тот персонаж, в которого влюбляешься сразу же и переживаешь за его судьбу до конца фильма!</blockquote>
+       
+        </div>
+        <div class="film">
+            <div class="poster"><a href="https://gidonline.io/film/ne-dyshi/" target="_blank"><img src="imgs/Don't_Breathe.png" alt="Не дыши"></a>
+            </div> 
+            
+            <h6>Don't Breathe</h6>
+          
+            <div class="rating">
+                <input name="rating-8" type="radio" value="0" id="zero8">
+                <input name="rating-8" type="radio" value="0.5"><label for="zero8"></label>
+                <input name="rating-8" type="radio" value="1">
+                <input name="rating-8" type="radio" value="1.5">
+                <input name="rating-8" type="radio" value="2">
+                <input name="rating-8" type="radio" value="2.5">
+                <input name="rating-8" type="radio" value="3">
+                <input name="rating-8" type="radio" value="3.5">
+                <input name="rating-8" type="radio" value="4" checked>
+                <input name="rating-8" type="radio" value="4.5">
+                <input name="rating-8" type="radio" value="5">
+            </div>
+
+            <article>Не дыши. Настоящий триллер с элементами хоррора.</article>
+            <blockquote cite="">Грабители забираются в дом одинокого слепого старика с целью украсть огромную сумму, которая, по слухам, спрятана где-то внутри. Казалось бы — что может быть проще, чем вынести деньги из дома практического беспомощного человека. Но они жестоко ошибаются: преследуемый становится преследователем. И тайна, которую он хранит, гораздо страшнее, чем обычные пенсионные накопления.</blockquote>
+        
+        </div>
+        <div class="film">
+            <div class="poster"><a href="https://kinokrad.co/261826-malchishnik-v-vegase.html" target="_blank"><img src="imgs/hangover.jpg" alt="Мальчишник в Вегасе"></a>
+            </div> 
+            
+            <h6>Мальчишник в Вегасе</h6>
+           
+            <div class="rating">
+                <input name="rating-9" type="radio" value="0" id="zero9">
+                <input name="rating-9" type="radio" value="0.5"><label for="zero9"></label>
+                <input name="rating-9" type="radio" value="1">
+                <input name="rating-9" type="radio" value="1.5">
+                <input name="rating-9" type="radio" value="2">
+                <input name="rating-9" type="radio" value="2.5">
+                <input name="rating-9" type="radio" value="3">
+                <input name="rating-9" type="radio" value="3.5">
+                <input name="rating-9" type="radio" value="4">
+                <input name="rating-9" type="radio" value="4.5" checked>
+                <input name="rating-9" type="radio" value="5">
+            </div>
+
+            <article>The Hangover, дословно — «Похмелье»</article>
+            <blockquote cite="https://www.film.ru/articles/chto-ostalos-v-vegase">"Все, что происходит в Вегасе, остается в Вегасе. Кроме герпеса. Его оттуда привозишь с собой",- говорит герою его будущей тесть перед поездкой на мальчишник. Четыре очень милых молодых человека сильно за тридцать едут в Вегас.</blockquote>
+       
+        </div>
+        <div class="film">
+            <div class="poster"><a href="https://filmix.co/fantastiks/3001-zheleznyy-chelovek_2008.html" target="_blank"><img src="imgs/ironman.jpg" alt="Железный человек"></a>
+            </div> 
+            
+            <h6>Iron Man</h6>
+          
+            <div class="rating">
+                <input name="rating-10" type="radio" value="0" id="zero10">
+                <input name="rating-10" type="radio" value="0.5"><label for="zero10"></label>
+                <input name="rating-10" type="radio" value="1">
+                <input name="rating-10" type="radio" value="1.5">
+                <input name="rating-10" type="radio" value="2">
+                <input name="rating-10" type="radio" value="2.5">
+                <input name="rating-10" type="radio" value="3">
+                <input name="rating-10" type="radio" value="3.5">
+                <input name="rating-10" type="radio" value="4">
+                <input name="rating-10" type="radio" value="4.5" checked>
+                <input name="rating-10" type="radio" value="5">
+            </div>
+
+            <article>Железный человек. Можно бесконечно много говорить о Marvel, выбрать в топ один из фильмов невозможно, т.к. они представляют собой одну сюжетную линию. Оставляю здесь Железного человека, потому что, наверное, именно он первым подарил мне любовь к данной киновселеной.</article>
+            <blockquote cite="http://beserial.net/podborki/vse-filmi-marvel">Marvel Studios – легендарная и, пожалуй, лидирующая студия в мировом кинематографе. Свой путь она начала более 75 лет назад. Именно тогда человечество впервые лицезрело фантастические истории в виде комиксов и коротких рассказов. Спустя время американская компания попробовала себя в производстве и не прогадала. Гениальный конструктор, миллиардер и плейбой Тони Старк решает полностью изменить свой образ жизни после того, как понимает, что создаваемое им оружие несет лишь смерть и разрушения. При помощи созданного им уникального экзоскелета он вступает в борьбу с теми, для кого война и страдания людей - просто большой бизнес.</blockquote>
+       
+        </div>
+        <div class="film">
+            <div class="poster"><a href="https://wink.rt.ru/media_items/54798730?utm_source=media_film&utm_medium=banner&utm_term=__9lznw-0z11p__&utm_content=static_knopka_desktop_&utm_campaign=4002_kinopodborki_wink" target="_blank"><img src="imgs/Split.jpg" alt="Сплит"></a>
+            </div> 
+            
+            <h6>Сплит</h6>
+           
+            <div class="rating">
+                <input name="rating-11" type="radio" value="0" id="zero11">
+                <input name="rating-11" type="radio" value="0.5"><label for="zero11"></label>
+                <input name="rating-11" type="radio" value="1">
+                <input name="rating-11" type="radio" value="1.5">
+                <input name="rating-11" type="radio" value="2">
+                <input name="rating-11" type="radio" value="2.5">
+                <input name="rating-11" type="radio" value="3">
+                <input name="rating-11" type="radio" value="3.5">
+                <input name="rating-11" type="radio" value="4" checked>
+                <input name="rating-11" type="radio" value="4.5">
+                <input name="rating-11" type="radio" value="5">
+            </div>
+
+            <article>Split, букв. перевод — Расщеплённый. Американский психологический триллер.</article>
+            <blockquote cite="">Кевин — человек, в котором живет не менее двадцати трех личностей, вынужден похитить трех девушек подросткового возраста. Тем временем, пока они находятся в заточении, самая главная личность Кевина — Чудовище — материализуется.</blockquote>
+        
+        </div>
+    </section>
+
+    <article id="aboutme">
+        Еще не придумала.
+    </article>
+
+    <section id="pictures">
+        <div class="pict"><img src="imgs/happy.jpg" alt="happy"><p>Пускай это мое счастливое состояние</p></div>
+        <div class="pict"><img src="imgs/sad.jpg" alt="sad"><p>Грустное - только так &#128568;</p></div>
+        <div class="pict"><img src="imgs/current.jpg" alt="current"><p>В текущий момент? Ладно</p></div>
+    </section>
+
+    <div id="quote">
+        <p>Чтоб не искать в интернете совершенно левую цитату, я действительно попробовала вспомнить, что мне когда-либо западало в душу. Поскольку я девочка, не судите строго &#128519;</p>
+        <q class="quot">Я с изумлением слушала, как он говорил, что измена – это тогда, когда «хочется немедленно рассказать что то важное вместо жены другой женщине», и «чтобы изменить, не надо вообще выходить из дому, потому что для этого достаточно иметь телефон или выход в интернет».
+        </q>
+        <cite>Януш Леон Вишневский, Любовница</cite>
+    </div>
+
+    <section id="city">
+        <h3>Родилась и выросла в г.Запорожье</h3>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imgs/1zp.jpg" class="d-block w-100" alt="first">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Наш город имеет богатейшую историю, о которой даже коренные жители сейчас редко вспоминают, и тем не менее вряд ли найдется человек, который не слышал о Запорожских Казаках, не проезжал летом по бывшей Екатеринославской железной дороге, чтобы провести отпуск на Юге, не знал по крайней мере одного анекдота о "Запорожце" - малолитражке, выпускаемой нашим автозаводом</p>
+                    </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/2zp.jpg" class="d-block w-100" alt="second">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Промышленные гиганты, такие как Запорожсталь, Днепроспецсталь, Запорожкокс, алюминиевый и титано-магниевый комбинаты определяют не только экологическую обстановку в городе, но и состояние принадлежащих им жилых домов.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/3zp.jpg" class="d-block w-100" alt="third">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Город Запорожье является одним из крупнейших областных центров Украины. Территория города - 334 м2. Через город протекает река Днепр.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/4zp.jpg" class="d-block w-100" alt="fourth">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Город Запорожье - один из крупнейших центров Украины по производству высококачественных сталей, ферросплавов, цветных металлов, трансформаторов, авиадвигателей, абразивной и кабельной продукции. По промышленному потенциалу г. Запорожье занимает 3 место на Украине.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/5zp.jpg" class="d-block w-100" alt="fifth">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Среди предприятий с иностранным капиталом наиболее успешно работают ЗАО "IVECO -Мотор-Сич" (объем инвестиций - $ 34 000 000)? ПБК "Славутич", инвестором которого является компания "Болтик Бевериджес Холдинг АБ" ($ 20 000 000). В городе создано также совместное украинско-корейское предприятие "АВТОЗАЗ-DAEWOO" по производству легковых автомобилей.</p>
+                   </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/6zp.jpg" class="d-block w-100" alt="fifth">
+                <div class="carousel-caption d-none d-md-block">
+                    <p style="text-shadow: black 1px 1px 1px;"> Достигнуты договоренности с Европейским банком реконструкции и развития о кредитовании программы развития и реконструкции системы водоснабжения и канализации в городе Запорожье.</p>
+                </div>
+              </div>
+            </div>
+          </div>    
+    </section>
+
+    <h2>Карта города Запорожье</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2526.6307905198787!2d35.099131689506955!3d47.86144357015362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1588015984387!5m2!1sru!2sua" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+    <h2>3D Model. Solar system</h2>
+    <iframe src="solar.html">
+    </iframe>
+
+    <footer>
+        <address itemscope itemtype="http://schema.org/Person">
+            &copy;
+            <span itemprop="name">Anastasia Ivchenko</span>,
+            <a href="mailto:anastasiaivchenk@gmail.com" itemprop="email">anastasiaivchenk@gmail.com</a>,
+            <div itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">
+                <span itemprop="name">НТУ "ХПИ"</span>
+            </div>
+    </address>
+    </footer>
+
+
+    <script>
+            function change() {
+            var element = document.getElementById("dark");
+            element.classList.toggle("light");
+            
+            }
+            
+            $('#b1').click(function(){
+                var btn = $(this);
+                var btn2 = $("#b2");
+                change();
+
+                if (btn.hasClass('btn-dark')){
+                    btn.removeClass('btn-dark');
+                    btn.addClass('btn-light')
+
+                    btn2.removeClass('btn-dark');
+                    btn2.addClass('btn-light')
+
+                }else{
+                    btn.removeClass('btn-light');
+                    btn.addClass('btn-dark')
+
+                    btn2.removeClass('btn-light');
+                    btn2.addClass('btn-dark')
+                }
+            })
+
+            
+    </script>
+    <script>
+            $(function(){
+            $('a[href^="#"], button').bind('click.smoothscroll', function(){
+            var target = $(this).attr('href'),
+                bl_top = $(target).offset().top;
+            $('body, html').animate({scrollTop: bl_top}, 1000);
+            return false;
+            })
+            });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
